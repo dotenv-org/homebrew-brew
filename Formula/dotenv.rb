@@ -5,34 +5,34 @@
 class Dotenv < Formula
   desc "Better dotenv–from the creator of `dotenv`"
   homepage "https://github.com/dotenv-org/dotenv"
-  url "https://github.com/dotenv-org/dotenv/archive/refs/tags/v0.2.18.tar.gz"
-  sha256 "5bbbfd353975b17434c600542bd1d8da9da7f78e69d290474c30d821825624bb"
+  url "https://github.com/dotenv-org/dotenv/archive/refs/tags/v0.2.19.tar.gz"
+  sha256 "1f9e8fdf0431d464feb7c84d32a3445bcf0f99f40830e38979d2878145b2e4f5"
 
   on_macos do
     on_intel do
-      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.18/dotenv-0.2.18-darwin-amd64.tar.gz"
-      sha256 "3d8c6f6fae1f1ccbb75773efa1f4597d8df8580b9f27f17295fed7535d94187a"
+      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.19/dotenv-0.2.19-darwin-amd64.tar.gz"
+      sha256 "135d997dc1e760cb73250e12154b341b246c5a92c45e57cf6d528d7f8aab1008"
     end
 
     on_arm do
-      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.18/dotenv-0.2.18-darwin-arm64.tar.gz"
-      sha256 "8cdcb5efaa877ee5427dbf79b4ea418e5b9d8f41f43c59bbd9331e17a4b3b474"
+      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.19/dotenv-0.2.19-darwin-arm64.tar.gz"
+      sha256 "44c6e2b1c96420c5fe932daca98ffe7a53fe863ae445225de7e54fae6f4a3c16"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.18/dotenv-0.2.18-linux-amd64.tar.gz"
-      sha256 "b53e4b7d467227698522028917af4987fa76b225ab5dd98c7ce4367de37e7afd"
+      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.19/dotenv-0.2.19-linux-amd64.tar.gz"
+      sha256 "355b7075375c2b75cce67879a1fe320b72c494d7da6c77ddae59aca44100ad90"
     end
 
     on_arm do
-      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.18/dotenv-0.2.18-linux-arm64.tar.gz"
-      sha256 "879d691ced3131a309174f7ae8f7fece3435715e4fdff89d0e365185523db232"
+      url "https://github.com/dotenv-org/dotenv/releases/download/v0.2.19/dotenv-0.2.19-linux-arm64.tar.gz"
+      sha256 "e28c56e90e02cbfb32d0f2b3b619279df609a42e69a8b383df9dfacc33df48ea"
     end
   end
 
   def install
-    bin.install "dotenv"; bin.install "dotenv" => "dotenv2"; bin.install_symlink "dotenv" => "git-dotenv";
+    bin.install "dotenv"; bin.install_symlink "dotenv" => "git-dotenv";
   end
 end
