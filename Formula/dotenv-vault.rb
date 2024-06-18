@@ -1,8 +1,8 @@
 class DotenvVault < Formula
   desc "Sync .env files"
   homepage "https://dotenv.org"
-  url "https://github.com/dotenv-org/dotenv-vault/releases/download/v1.26.2/dotenv-vault-v1.26.1-d813d7a-darwin-arm64.tar.gz"
-  sha256 "72936db5242d0e05920d9f2d12f5f0bc7af8e00e4a6bf197f43359971cd41bff"
+  url "https://github.com/dotenv-org/dotenv-vault/releases/download/v1.26.2/dotenv-vault-v1.26.2-3613e80-darwin-arm64.tar.gz"
+  sha256 "384fdd9be49a4baf2fe2d8fd05ea867374a6cd07cd725548015427103ba968e9"
   depends_on "dotenv-org/brew/dotenv-vault-node" => "16.15.1"
 
   def install
